@@ -10,7 +10,7 @@ from sqlalchemy.orm import declarative_base
 
 DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./dev_database.db")
 
-engine = create_async_engine(DATABASE_URL, echo=True)
+engine = create_async_engine(DATABASE_URL)
 
 SessionLocal = async_sessionmaker(engine, expire_on_commit=False)
 
