@@ -1,0 +1,17 @@
+[tool.ruff]
+# Set the maximum line length
+line-length = 120
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+extend-select = ["I"]
+
+[tool.mypy]
+python_version = "3.12"
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+strict = true
+show_error_codes = true
+no_incremental = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

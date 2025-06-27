@@ -1,0 +1,4 @@
+aiosqlite==0.21.0
+fastapi[all]==0.115.13
+pydantic==2.11.7
+sqlalchemy==2.0.41

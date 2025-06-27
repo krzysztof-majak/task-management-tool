@@ -1,0 +1,50 @@
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+.DS_Store
+Thumbs.db
+*.bat
+
+# Docker specific (self-referential exclusion)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Git specific
+.git/
+.gitignore
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Any local settings or sensitive files that should never be in the image
+.env
+.flaskenv
